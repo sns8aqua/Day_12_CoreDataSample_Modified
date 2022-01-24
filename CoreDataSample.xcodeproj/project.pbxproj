@@ -16,6 +16,13 @@
 		EE64BB7E279DBB8E004E7B9F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EE64BB7C279DBB8E004E7B9F /* LaunchScreen.storyboard */; };
 		EE64BB89279DBB8E004E7B9F /* CoreDataSampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE64BB88279DBB8E004E7B9F /* CoreDataSampleTests.swift */; };
 		EE64BB94279DBB8E004E7B9F /* CoreDataSampleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE64BB93279DBB8E004E7B9F /* CoreDataSampleUITests.swift */; };
+		EE64BBA2279DBDB2004E7B9F /* DisplayTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE64BBA1279DBDB2004E7B9F /* DisplayTableViewCell.swift */; };
+		EEE2DFDF279F0E02006D2483 /* DBManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEE2DFDE279F0E01006D2483 /* DBManager.swift */; };
+		EEE2DFE1279F0FAE006D2483 /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEE2DFE0279F0FAE006D2483 /* UserModel.swift */; };
+		EEE2DFE4279F105E006D2483 /* DBCommon.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEE2DFE3279F105E006D2483 /* DBCommon.swift */; };
+		EEE2DFE6279F1AF1006D2483 /* DBModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEE2DFE5279F1AF1006D2483 /* DBModel.swift */; };
+		EEE2DFE8279F1EEE006D2483 /* DBUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEE2DFE7279F1EEE006D2483 /* DBUtility.swift */; };
+		EEE2DFEA279F2010006D2483 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEE2DFE9279F2010006D2483 /* Constant.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +58,13 @@
 		EE64BB8F279DBB8E004E7B9F /* CoreDataSampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CoreDataSampleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EE64BB93279DBB8E004E7B9F /* CoreDataSampleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataSampleUITests.swift; sourceTree = "<group>"; };
 		EE64BB95279DBB8E004E7B9F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EE64BBA1279DBDB2004E7B9F /* DisplayTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisplayTableViewCell.swift; sourceTree = "<group>"; };
+		EEE2DFDE279F0E01006D2483 /* DBManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DBManager.swift; sourceTree = "<group>"; };
+		EEE2DFE0279F0FAE006D2483 /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
+		EEE2DFE3279F105E006D2483 /* DBCommon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DBCommon.swift; sourceTree = "<group>"; };
+		EEE2DFE5279F1AF1006D2483 /* DBModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DBModel.swift; sourceTree = "<group>"; };
+		EEE2DFE7279F1EEE006D2483 /* DBUtility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DBUtility.swift; sourceTree = "<group>"; };
+		EEE2DFE9279F2010006D2483 /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,7 +117,11 @@
 			children = (
 				EE64BB6E279DBB8C004E7B9F /* AppDelegate.swift */,
 				EE64BB70279DBB8C004E7B9F /* SceneDelegate.swift */,
+				EEE2DFE9279F2010006D2483 /* Constant.swift */,
 				EE64BB72279DBB8C004E7B9F /* ViewController.swift */,
+				EEE2DFE0279F0FAE006D2483 /* UserModel.swift */,
+				EE64BBA1279DBDB2004E7B9F /* DisplayTableViewCell.swift */,
+				EEE2DFE2279F104D006D2483 /* DBManager */,
 				EE64BB74279DBB8C004E7B9F /* Main.storyboard */,
 				EE64BB7A279DBB8E004E7B9F /* Assets.xcassets */,
 				EE64BB7C279DBB8E004E7B9F /* LaunchScreen.storyboard */,
@@ -129,6 +147,17 @@
 				EE64BB95279DBB8E004E7B9F /* Info.plist */,
 			);
 			path = CoreDataSampleUITests;
+			sourceTree = "<group>";
+		};
+		EEE2DFE2279F104D006D2483 /* DBManager */ = {
+			isa = PBXGroup;
+			children = (
+				EEE2DFDE279F0E01006D2483 /* DBManager.swift */,
+				EEE2DFE3279F105E006D2483 /* DBCommon.swift */,
+				EEE2DFE5279F1AF1006D2483 /* DBModel.swift */,
+				EEE2DFE7279F1EEE006D2483 /* DBUtility.swift */,
+			);
+			path = DBManager;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -261,9 +290,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EEE2DFE4279F105E006D2483 /* DBCommon.swift in Sources */,
 				EE64BB79279DBB8C004E7B9F /* CoreDataSample.xcdatamodeld in Sources */,
+				EEE2DFE8279F1EEE006D2483 /* DBUtility.swift in Sources */,
+				EEE2DFE1279F0FAE006D2483 /* UserModel.swift in Sources */,
+				EEE2DFDF279F0E02006D2483 /* DBManager.swift in Sources */,
 				EE64BB73279DBB8C004E7B9F /* ViewController.swift in Sources */,
+				EEE2DFE6279F1AF1006D2483 /* DBModel.swift in Sources */,
 				EE64BB6F279DBB8C004E7B9F /* AppDelegate.swift in Sources */,
+				EEE2DFEA279F2010006D2483 /* Constant.swift in Sources */,
+				EE64BBA2279DBDB2004E7B9F /* DisplayTableViewCell.swift in Sources */,
 				EE64BB71279DBB8C004E7B9F /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
